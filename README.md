@@ -1,4 +1,4 @@
-# Sellysoft App (With -NodeJS-Express-ES6)
+# Sellysoft App [ NodeJS-Express-ES6 ]
 
 > une appli pour simplifier la vente, la facturation et la fidélisation Sellysoft propose une solution modulable à toutes les entreprises, en fonction de leurs besoins. En effet, il est possible de construire son offre personnalisée, incluant au choix un module CRM, un module de facturation et un module de fidélisation
 a REST API server using express.js and ES6
