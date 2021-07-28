@@ -9,7 +9,7 @@ and build for production
 ```bash
 
 # open in browser
-http://localhost:3000
+http://localhost:5000
 
 # build for production (output to dist folder)
 npm run build
