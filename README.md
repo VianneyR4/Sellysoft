@@ -1,19 +1,12 @@
-# NodeJS Express ES6 Hello world
+# Sellysoft App (With -NodeJS-Express-ES6)
 
-> An example hello world app, showing how to build
+> une appli pour simplifier la vente, la facturation et la fidélisation Sellysoft propose une solution modulable à toutes les entreprises, en fonction de leurs besoins. En effet, il est possible de construire son offre personnalisée, incluant au choix un module CRM, un module de facturation et un module de fidélisation
 a REST API server using express.js and ES6
 and build for production
 
 ### Quick start
 
 ```bash
-# setup
-git clone https://github.com/500tech/nodejs-express-es6.git   
-cd nodejs-express-es6  
-npm install  
-
-# start the server (starts babel-node with nodemon)
-npm start 
 
 # open in browser
 http://localhost:3000
@@ -23,13 +16,13 @@ npm run build
 
 ```
 
-> Brought to you with love, from us at [500Tech](http://500Tech.com) - Israel's leading AngularJS consultancy
+> Brought to you with love, from us at [Softworld.dev.community](http://softworld.dev.community.io)
 
 ## License
 
 MIT Licensed
 
-Copyright (c) 2015, [500Tech](http://500tech.com)
+Copyright (c) 2021, [Softworld.dev.community](http://softworld.dev.community.io)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
@@ -38,8 +31,3 @@ permit persons to whom the Software is furnished to do so, subject to the follow
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
 Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
