@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 // material
 import { visuallyHidden } from '@material-ui/utils';
-import { Box, Checkbox, TableRow, TableCell, TableHead, TableSortLabel } from '@material-ui/core';
+// import { Box, Checkbox, Typography, TableRow, TableCell, TableHead, TableSortLabel } from '@material-ui/core';
+import { Box, Typography, TableRow, TableCell, TableHead, TableSortLabel } from '@material-ui/core';
 
 // ----------------------------------------------------------------------
 
@@ -31,13 +32,18 @@ export default function UserListHead({
   return (
     <TableHead>
       <TableRow>
-        <TableCell padding="checkbox">
+        <TableCell align="left">
+          <Typography variant="subtitle2" noWrap>
+            ID
+          </Typography>
+        </TableCell>
+        {/* <TableCell padding="checkbox">
           <Checkbox
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={onSelectAllClick}
           />
-        </TableCell>
+        </TableCell> */}
         {headLabel.map((headCell) => (
           <TableCell
             key={headCell.id}
