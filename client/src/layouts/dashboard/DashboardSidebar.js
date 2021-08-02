@@ -57,7 +57,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
       }}
     >
       <Box sx={{ px: 2.5, py: 3 }}>
-        <Box component={RouterLink} to="/" sx={{ display: 'inline-flex' }}>
+        <Box component={RouterLink} to="/dashboard" sx={{ display: 'inline-flex' }}>
           <Logo />
         </Box>
       </Box>
@@ -102,20 +102,26 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
 
           <Box sx={{ textAlign: 'center' }}>
             <Typography gutterBottom variant="h6">
-              Get more?
+              Assistance
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              From only $69
+              Contact:
+              <br />
+              +243 (0) 972 251 170
+              {/* <br />
+              +250 (0) 784 726 619 */}
+              <br />
+              softworldmail@gmail.com
             </Typography>
           </Box>
 
           <Button
             fullWidth
-            href="https://material-ui.com/store/items/minimal-dashboard/"
+            href="https://softworld.dev.community.io"
             target="_blank"
             variant="contained"
           >
-            Upgrade to Pro
+            Visitez nous
           </Button>
         </Stack>
       </Box>

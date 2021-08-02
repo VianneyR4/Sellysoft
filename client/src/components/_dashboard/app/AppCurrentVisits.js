@@ -10,12 +10,12 @@ import { BaseOptionChart } from '../../charts';
 
 // ----------------------------------------------------------------------
 
-const CHART_HEIGHT = 372;
-const LEGEND_HEIGHT = 72;
+const CHART_HEIGHT = 340;
+const LEGEND_HEIGHT = 55;
 
 const ChartWrapperStyle = styled('div')(({ theme }) => ({
   height: CHART_HEIGHT,
-  marginTop: theme.spacing(5),
+  marginTop: theme.spacing(1),
   '& .apexcharts-canvas svg': { height: CHART_HEIGHT },
   '& .apexcharts-canvas svg,.apexcharts-canvas foreignObject': {
     overflow: 'visible'
@@ -33,6 +33,8 @@ const ChartWrapperStyle = styled('div')(({ theme }) => ({
 
 const CHART_DATA = [4344, 5435, 1443, 4443];
 
+const varia = 'fromage';
+
 export default function AppCurrentVisits() {
   const theme = useTheme();
 
@@ -43,7 +45,17 @@ export default function AppCurrentVisits() {
       theme.palette.warning.main,
       theme.palette.error.main
     ],
-    labels: ['America', 'Asia', 'Europe', 'Africa'],
+    labels: [
+      // `Fromage(${CHART_DATA[0]})`,
+      // `Lait(${CHART_DATA[1]})`,
+      // `Pain(${CHART_DATA[2]})`,
+      // `Jus(${CHART_DATA[3]})`,
+      // `Sossis(${CHART_DATA[4]})`
+      'Fromage',
+      'Lait',
+      'Miscuit',
+      'Jus'
+    ],
     stroke: { colors: [theme.palette.background.paper] },
     legend: { floating: true, horizontalAlign: 'center' },
     dataLabels: { enabled: true, dropShadow: { enabled: false } },
@@ -63,7 +75,7 @@ export default function AppCurrentVisits() {
 
   return (
     <Card>
-      <CardHeader title="Current Visits" />
+      <CardHeader title="Produit plus vendu" />
       <ChartWrapperStyle dir="ltr">
         <ReactApexChart type="pie" series={CHART_DATA} options={chartOptions} height={280} />
       </ChartWrapperStyle>

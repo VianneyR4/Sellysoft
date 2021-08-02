@@ -1,7 +1,10 @@
 import faker from 'faker';
 import PropTypes from 'prop-types';
+import { Icon } from '@iconify/react';
+import { Link as RouterLink } from 'react-router-dom';
+import arrowIosForwardFill from '@iconify/icons-eva/arrow-ios-forward-fill';
 // material
-import { Card, Typography, CardHeader, CardContent } from '@material-ui/core';
+import { Box, Button, Card, Typography, CardHeader, CardContent } from '@material-ui/core';
 import {
   Timeline,
   TimelineItem,
@@ -17,27 +20,27 @@ import { fDateTime } from '../../../utils/formatTime';
 
 const TIMELINES = [
   {
-    title: '1983, orders, $4220',
+    title: 'Vente de #5 Pains Anna',
     time: faker.date.past(),
     type: 'order1'
   },
   {
-    title: '12 Invoices have been paid',
+    title: 'Ajout de #120 Biscuits (QR-Code)',
     time: faker.date.past(),
     type: 'order2'
   },
   {
-    title: 'Order #37745 from September',
+    title: 'Rapport du 09 Mar 2021',
     time: faker.date.past(),
     type: 'order3'
   },
   {
-    title: 'New order placed #XF-2356',
+    title: 'Alert Stock [Pains restant #32]',
     time: faker.date.past(),
     type: 'order4'
   },
   {
-    title: 'New order placed #XF-2346',
+    title: 'Rupture de Stock [Fromage #00]',
     time: faker.date.past(),
     type: 'order5'
   }
@@ -86,14 +89,33 @@ export default function AppOrderTimeline() {
         }
       }}
     >
-      <CardHeader title="Order Timeline" />
-      <CardContent>
+      <CardHeader title="Timeline des activitEs" />
+      <CardContent
+        style={{
+          marginBottom: '-55px',
+          marginTop: '-15px',
+          marginLeft: '-5px',
+          marginRight: '-20px'
+        }}
+      >
         <Timeline>
           {TIMELINES.map((item, index) => (
             <OrderItem key={item.title} item={item} isLast={index === TIMELINES.length - 1} />
           ))}
         </Timeline>
       </CardContent>
+
+      <Box sx={{ p: 2, textAlign: 'right' }}>
+        <Button
+          to="#"
+          size="small"
+          color="inherit"
+          component={RouterLink}
+          endIcon={<Icon icon={arrowIosForwardFill} />}
+        >
+          Voir tout
+        </Button>
+      </Box>
     </Card>
   );
 }
